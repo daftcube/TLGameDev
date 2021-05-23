@@ -1,0 +1,16 @@
+site_name: TL Game Development
+theme:
+  name: material
+extra:
+  generator: false
+  social:
+  - icon: fontawesome/brands/linkedin
+    link: https://www.linkedin.com/in/owen-b-362785104/
+    name: Owen on LinkedIn
+copyright: Copyright &copy; 2021 Owen Bartolf
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.keys
+  - footnotes
+  - attr_list
