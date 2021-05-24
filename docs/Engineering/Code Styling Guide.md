@@ -107,7 +107,7 @@ For methods with return types and parameters, they should have a `<param>` tag f
 
 Any additional considerations should be mentioned in `<remarks>`.
 
-For more reading on XML block comments, see this article.
+For more reading on XML block comments, see this [article](./Comments.md).
 
 ```csharp
     // XML Block Comment Example

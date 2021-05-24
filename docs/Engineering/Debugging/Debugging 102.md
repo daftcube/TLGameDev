@@ -76,12 +76,59 @@ This section will focus on teaching how to use the debugger in code within Unity
 
 ### Programs Required
 
-
+![Debugger Attach]()
 
 ### Attaching the Debugger
 
+In order to use the debugger, you first must 'attach' it to the Unity process. This allows the debugger to follow along with Unity when it is executing your code. Attaching the debugger prevents any edits to the code as long as the debugger is attached.
+
+Look for a button at the top of the Visual Studio IDE that says "Attach to Unity." Click that to attach the debugger.
+
+![Attach](../../../_assets/debuggerAttach.gif)
+
 ### Breakpoints
 
+One of the main features of a modern debugger is breakpoints. Breakpoints halt the program execution when reached. You can use the debugger to either continue executing the program at real time or step through the code line-by-line. Breakpoint debugging makes it easy to visualize how your program flows at a particular section, and you can use breakpoint debugging to see if certain parts of your program are being reached during execution.
+
+To make a breakpoint, click on the blank space between the line numbers and the text area:
+
+![Attach](../../../_assets/debuggerBreak.gif)
+
+When the program reaches a breakpoint, the debugger will halt the program. This is what Visual Studio will look like when execution is halted. The yellow line represents the current line where the program execution halted:
+
+![Halted](../../../_assets/debuggerHalted.png)
+
+When halted, the debugger has the following commands. Here are brief descriptions of each:
+
+#### Continue
+
+Continue resumes the program execution at real time until the program ends or the debugger hits another breakpoint. Visual Studio should minimize to reveal Unity running.
+
+![Continue](../../../_assets/debuggerContinue.gif)
+
+#### Step Into
+
+Step Into moves the debugger to the immediate next line in the code. If that line is a method that will create a new stack frame, the debugger will enter the method and halt at the first line inside the method. One quirk is that the debugger will execute any methods not defined by the user in realtime; for example, `Directory.Exists()` is part of the .NET Framework, so it is executed at realtime before the debugger halts at the next line.
+
+![Step Into](../../../_assets/debuggerStepInto.gif)
+
+#### Step Over
+
+Step Over moves the debugger to the immediate next line in the code. If that line is a method that will create a new stack frame, the debugger will enter that method and execute the entire function at real time before halting at the very next line after that method.
+
+#### Step Out
+
+Step Out resumes the program execution until the current method is finished executing. In other words, it executes the program until the current stack frame is removed off of the runtime stack.
+
+
 ### Peeking Variables
+
+When the execution is halted by a breakpoint, the debugger actually allows you to peek the value of any value that exists within the current execution context. The current execution context includes anything in the runtime stack and the heap (memory where object data is stored). To peek a value of a variable, field, or property, just hover your mouse cursor over any occurence of that variable, field, or property. No print statements required!
+
+![Peek](../../../_assets/debuggerPeek.gif)
+
+The combination of being able top peek variables while stepping through the program line-by-line opens up a whole new world of debugging possibilities. Being able to walk through the code at your own pace and validate that every field is correct allows you to catch issues faster than trying to walk through the code with a pencil and paper. Overall, it's just a much better experience!
+
+
 
 [^1]: In multithreaded contexts, each thread gets its own stack, and the bottom of the stack will have the entry function for that thread. Multithreading is really complex though.

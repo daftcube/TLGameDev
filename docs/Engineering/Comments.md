@@ -59,7 +59,7 @@ Over time, you will develop a commenting style. If working on a team, ensure tha
 
 ## The Power of XML Comments
 
-XML Comments are a special feature to Visual Studio. XML Comments are special comments that one places before the definition of classes, properties, .
+XML Comments are a special feature to Visual Studio. XML Comments are special comments that one places before the definition of properties, classes, interfaces, and methods that define documentation in a structured format that can be read by Visual Studio and other supporting tools.
 
 If code in the project has XML comments, Visual Studio will display those comments in the intellisense autocomplete window. The ability to have the documentation integrated with autocomplete is a massive boon; it is so much faster to have the documentation right there than to switch tabs to look at the method source!
 
