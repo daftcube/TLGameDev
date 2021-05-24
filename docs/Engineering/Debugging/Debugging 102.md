@@ -76,7 +76,13 @@ This section will focus on teaching how to use the debugger in code within Unity
 
 ### Programs Required
 
-![Debugger Attach]()
+In order to use the Visual Studio debugging tools, you will need the following tools and applications.
+
+- Unity
+- Visual Studio (Not VS Code)
+- [Visual Studio Tools for Unity](https://docs.microsoft.com/en-us/visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity)
+
+In addition, you cannot be connected to a VPN. It's just a weird quirk, don't mention it.
 
 ### Attaching the Debugger
 

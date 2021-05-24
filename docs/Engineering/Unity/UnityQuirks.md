@@ -1,3 +1,0 @@
-# Unity Quirks
-
-## GameObjects

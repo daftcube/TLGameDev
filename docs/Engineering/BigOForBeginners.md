@@ -1,4 +1,4 @@
-# Big O for New Programmers
+# Big O for Beginners
 
 Big O notation is one of the most ubiquitous pieces of mathematics in computer science. Being aware of Big O notation and program time complexity can make you a better programmer. But what is it, and why is it useful?
 

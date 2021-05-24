@@ -55,7 +55,14 @@ public char newLine = '\n';
 ```
 
 #### Naming Methods
-All method names should be `PascalCase`.
+All method names should be `PascalCase`. All method parameters should be `camelCase`.
+
+```csharp
+// Example Method Names
+public string[][] ParseCsv(string input) { /* ... */ }
+protected void Start() { /* ... */ }
+public void CleanupUI(bool isDisposing) { /* ... */ }
+```
 
 #### Naming Interfaces
 
