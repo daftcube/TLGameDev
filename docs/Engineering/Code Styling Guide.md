@@ -32,6 +32,17 @@ public int points = 10;
 public char newLine = '\n';
 ```
 
+#### Naming Constant and Readonly Fields
+
+Any readonly or constant fields should be `CAPITAL_SNAKE_CASE`.
+
+```csharp
+// Example Constant Field Names
+private const int POINTS_TO_WIN = 100;
+private readonly string WIN_MESSAGE = "You won :D";
+private const char DELIMITER = ';';
+```
+
 #### Naming Properties
 All property names should be `PascalCase`. Property names should not 
 
@@ -78,7 +89,7 @@ public class RaycastCombatController {}
 - For longer comments, either block comments
 - If using block comments, indent each line of the comment.
 
-```
+```csharp
 // This is an example comment.
 
 /*
@@ -111,11 +122,3 @@ For more reading on XML block comments, see this article.
         return followers.Remove(identityToRemove);
     }
 ```
-
-### No Magic Values
-
-Magic values are raw values placed in code.
-```csharp
-public bool IsStringTrue
-
-In addition, moving magic values to a named constant allows the value to be changed easily.

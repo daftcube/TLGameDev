@@ -193,6 +193,50 @@ In addition to the differences in syntax and handling of primitives, C# also boa
 
 The following features are probably stuff you will never need to use, but just being aware of these features will help you in the future.
 
+### Safe Casting with the `as` Keyword
+
+In Java, if you wanted to convert one type into another, you would use a cast operation:
+```java
+// The following code represents a cast operation from
+// type Object to Integer. If objectOfUnknownSpecificType
+// was not an Integer, the cast would throw an exception and
+// crash the program.
+Object objectOfUnknownSpecificType = new Integer(1);
+Integer objectAsInteger = (Integer)objectOfUnknownSpecificType;
+```
+
+You can also do this in C#:
+
+```csharp
+// The following code represents a cast operation from
+// type Object to String. If objectOfUnknownSpecificType
+// was not a String, the cast would throw an exception and
+// crash the program.
+object objectOfUnknownSpecificType = "Hello, World!";
+string objectAsString = (string)objectOfUnknownSpecificType;
+```
+
+However, C# has a safer form of casting in the form of the `as` keyword. The `as` keyword attempts to cast the value on the left into the type on the right. If the value could not be cast, instead of throwing an `InvalidCastException`, the operation will return null instead.
+
+```csharp
+object objectOfUnknownSpecificType = "Hello, World!";
+
+// objectAsString will be "Hello, World!". This is
+// because objectOfUnknownSpecificType is a string,
+// so the cast operation is successful.
+string objectAsString = (string)objectOfUnknownSpecificType;
+
+Student objectAsStudent = objectOfUnknownSpecificType as Student;
+
+// objectAsStudentIsNull will be true. This is because
+// objectOfUnknownSpecificType is not a Student, so
+// 'objectOfUnknownSpecificType as Student' will return
+// null instead of throwing an exception.
+bool objectAsStudentIsNull = objectAsStudent == null;
+```
+
+This feature is useful when working in environments when the underlying types of the values being operated upon are unknown. However, if you know the cast operation will be successful in every case, just use a normal cast operation.
+
 ### Properties: Getters and Setters that Act Like Fields
 
 In Java, if you wanted to have a private field that could be read by other classes, you would have to use the **mutator/accessor (also called getter/setter[^2]) pattern.**
