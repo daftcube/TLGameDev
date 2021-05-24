@@ -36,10 +36,10 @@ The below code implements a CSV Reader class that can parse CSV files in accorda
 
 ```csharp
 /*
-CsvReader.cs
+CsvStringReader.cs
 Author: Owen Bartolf
 
-Implements a CSV Parser.
+Implements a CSV Parser in compliance with RFC 4180.
 */
 
 using System;
@@ -193,4 +193,5 @@ namespace CsvDemo
         }
     }
 }
+
 ```
