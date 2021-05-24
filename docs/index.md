@@ -9,19 +9,19 @@ This website is a living document! If you think there is something this website 
 
 This website is created using [MkDocs](https://www.mkdocs.org/), so every page is written in [Markdown](https://commonmark.org/help/). Markdown is an incredibly easy and accessible markup language. This makes it easy to contribute. If you have ever used Discord, you already know Markdown!
 
-We will also add you to the [additional contributors](contributors.md) page for posterity!
+We will also add you to the [additional contributors](Additional Contributors.md) page for posterity!
 
 ## Was This Site Useful? Give us a star on GitHub!
 
 <figure>
-  <img src="_assets/starThisRepo.gif" width="300" />
+  <img src="starThisRepo.gif" width="300" />
 </figure>
 
 If you found this site useful, [consider starring our GitHub Project](https://github.com/daftcube/TLGameDev)! This helps our project get visibility and helps contributors stand out in college and job applications!
 
 ## A Letter from Owen Bartolf
 
-![Owen Bartolf](_assets/owenbartolf.jpg){align=left style="height:50%;width:50%"}
+![Owen Bartolf](owenbartolf.jpg){align=left style="height:50%;width:50%"}
 
 Hi! I'm Owen Bartolf! I made this website!
 

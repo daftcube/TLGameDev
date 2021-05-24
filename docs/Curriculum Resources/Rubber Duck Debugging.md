@@ -17,7 +17,7 @@ Honestly, no one expects someone to be able to program for more than an hour str
 ## Step 3: Consult Your Rubber Duck
 You are now in a headspace that is conducive to problem solving! Let’s get the problem solved by consulting your good friend, the Rubber Duck!
 
-![Duck](../_assets/duck.jpg){align=left style="height:20%;width:20%"}It might seem silly, but **explaining how your code works verbally allows you to see the bigger picture and not accidentally ignore certain details.** Many programmers at big tech companies have a rubber duck. Plus, your rubber duck is your friend, and DEEPLY INTERESTED in what your code does. Just look into those eyes…
+![Duck](duck.jpg){align=left style="height:20%;width:20%"}It might seem silly, but **explaining how your code works verbally allows you to see the bigger picture and not accidentally ignore certain details.** Many programmers at big tech companies have a rubber duck. Plus, your rubber duck is your friend, and DEEPLY INTERESTED in what your code does. Just look into those eyes…
 
 Look at your program and identify the highest point in the stack trace. Then, look at the rubber duck, and begin to explain how the code works out loud.
 
