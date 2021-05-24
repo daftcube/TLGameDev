@@ -6,7 +6,7 @@
 
 Now that we understand the fundamentals of debugging, we will now learn how to leverage modern debugging tools to assist in our debugging process.
 
-AP Computer Science A and other courses emphasized debugging through the use of print statements and . While this builds good habits early, debugging with just print statements is not very efficient. This article will enlighten you to the glorious power of the modern debugger, and it will certainly become a crutch you will learn on for the long-term future! Muhahahaha!
+AP Computer Science A and other courses emphasized debugging through the use of print statements and. While this builds good habits early, debugging with just print statements is not very efficient. This article will enlighten you to the glorious power of the modern debugger, and it will certainly become a crutch you will learn on for the long-term future! Muhahahaha!
 
 
 
